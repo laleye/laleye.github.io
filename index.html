@@ -1,317 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Fréjus Laleye</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yuming Zhai, PhD student, limsi">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <meta name="google-site-verification" content="Fq8DglZAGwYTtAbRVsG8TgZ_oER5xoJziCd5CaFiOkQ"/>
-    <link rel="shortcut icon" href="favicon.ico">  
-    <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- FontAwesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/orbit-4.css">
-</head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fréjus A. A. Laleye</title>
+<meta name="description" content="Fréjus A. A. Laleye, PhD. Researcher in natural language processing and Chief Technology Officer: speech and language technology for African languages, technology strategy and engineering leadership.">
+<meta name="author" content="Fréjus A. A. Laleye">
+<meta name="google-site-verification" content="Fq8DglZAGwYTtAbRVsG8TgZ_oER5xoJziCd5CaFiOkQ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #fbf9f3;      /* alabaster white */
+    --ink: #241a12; --muted: #6a5c4c; --rule: #ddd3bf;
+    --head: #edd9a6;       /* light ochre gold: papyrus, manuscripts */
+    --head-rule: #c9a858;
+    --bronze: #8f6420; --bronze-light: #8f6420;
+    --laterite: #1f4a78;   /* lapis blue for links */
+    --cream: #241a12;
+    --indigo: #edd9a6;
+    --display: "Cormorant Garamond", "EB Garamond", Garamond, Georgia, serif;
+    --text: "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 19px; line-height: 1.55; }
+  a { color: var(--laterite); text-decoration-color: #a9bdd3; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--laterite); }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+  svg.glyph, svg.strip { fill: none; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+  svg .fill { stroke: none; }
 
+  /* Opening */
+  .opening { background: var(--head); color: var(--ink); border-bottom: 1px solid var(--head-rule); }
+  .opening .wrap { display: grid; grid-template-columns: 104px 1fr auto; gap: 28px; align-items: center; padding-top: 30px; padding-bottom: 30px; }
+  .portrait { padding: 4px; border: 1px solid var(--bronze); background: var(--paper); }
+  .portrait img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 18%; }
+  h1 { font-family: var(--display); font-weight: 600; font-size: 2.5rem; line-height: 1.05; margin: 0 0 6px; }
+  .role { font-variant: small-caps; letter-spacing: 0.08em; font-size: 0.93rem; color: var(--bronze-light); margin: 0 0 4px; }
+  .praise { font-family: var(--display); font-style: italic; font-size: 1.12rem; color: #5a4a36; margin: 0; }
+  .side { text-align: right; }
+  svg.strip { width: 200px; height: auto; stroke: var(--bronze-light); display: block; margin: 0 0 12px auto; }
+  svg.strip .fill { fill: var(--bronze-light); }
+  .links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 2px 16px; font-size: 0.92rem; max-width: 260px; margin-left: auto; }
+  .links a { color: var(--laterite); text-decoration-color: var(--head-rule); }
+
+  /* Call and response */
+  .exchange { display: grid; grid-template-columns: 250px 1fr; gap: 40px; padding: 40px 0; }
+  .divider { display: flex; align-items: center; gap: 18px; }
+  .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+  .divider svg { width: 84px; height: 21px; fill: none; stroke: var(--bronze); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
+  .divider svg .fill, svg.mini .fill { fill: var(--bronze); stroke: none; }
+  svg.mini { width: 22px; height: 22px; display: block; margin-bottom: 6px; fill: none; stroke: var(--bronze); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+  .call { margin: 0; display: flex; gap: 14px; align-items: flex-start; font-weight: 400; }
+  svg.glyph { width: 40px; flex: none; stroke: var(--bronze); }
+  svg.glyph .fill { fill: var(--bronze); }
+  .call small { display: block; font-variant: small-caps; letter-spacing: 0.16em; font-size: 0.8rem; color: var(--bronze); margin-bottom: 4px; }
+  .call em { font-family: var(--display); font-style: italic; font-weight: 500; font-size: 1.5rem; line-height: 1.2; display: block; }
+  .response > :first-child { margin-top: 0; }
+  .response > :last-child { margin-bottom: 0; }
+  .first { font-family: var(--display); font-size: 1.5rem; line-height: 1.35; font-weight: 500; margin: 0 0 26px; max-width: 34em; }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 40px; }
+  .grid h3 { font-family: var(--display); font-weight: 600; font-size: 1.28rem; line-height: 1.25; margin: 0 0 4px; }
+  .grid p { margin: 0; font-size: 0.97rem; color: var(--muted); }
+
+  .deeds { list-style: none; margin: 0; padding: 0; }
+  .deeds li { display: grid; grid-template-columns: 108px 1fr; gap: 20px; padding: 16px 0; border-top: 1px solid var(--rule); }
+  .deeds li:first-child { border-top: 0; padding-top: 0; }
+  .deeds .when { font-variant: small-caps; letter-spacing: 0.1em; font-size: 0.9rem; color: var(--bronze); padding-top: 5px; }
+  .deeds b { font-family: var(--display); font-weight: 600; font-size: 1.3rem; display: block; line-height: 1.3; margin-bottom: 2px; }
+  .deeds div { max-width: 60ch; }
+
+  .writings { list-style: none; margin: 0; padding: 0; }
+  .writings li { display: grid; grid-template-columns: 52px 1fr; gap: 12px; padding: 8px 0; border-top: 1px solid var(--rule); }
+  .writings li:first-child { border-top: 0; padding-top: 0; }
+  .w-year { font-family: var(--display); font-weight: 600; font-size: 1.15rem; color: var(--bronze); }
+  .w-title { display: block; line-height: 1.4; }
+  .w-venue { display: block; font-size: 0.88rem; font-variant: small-caps; letter-spacing: 0.08em; color: var(--muted); }
+
+  .closing { background: var(--head); color: var(--ink); border-top: 1px solid var(--head-rule); }
+  .closing .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 30px; padding-top: 30px; padding-bottom: 30px; }
+  .closing p { font-family: var(--display); font-style: italic; font-size: 1.35rem; margin: 0; }
+  .closing ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 0.95rem; }
+  .closing a { color: var(--laterite); text-decoration-color: var(--head-rule); }
+
+  @media (max-width: 800px) {
+    body { font-size: 18px; }
+    .wrap { padding: 0 16px; }
+    .opening .wrap { grid-template-columns: 76px 1fr; gap: 16px; padding-top: 22px; padding-bottom: 22px; }
+    h1 { font-size: 1.8rem; }
+    .role { font-size: 0.82rem; letter-spacing: 0.1em; }
+    .praise { display: none; }
+    .side { grid-column: 1 / -1; text-align: left; }
+    svg.strip { display: none; }
+    .links { justify-content: flex-start; max-width: none; margin: 0; }
+    .exchange { grid-template-columns: 1fr; gap: 18px; padding: 30px 0; }
+    .grid { grid-template-columns: 1fr; gap: 18px; }
+    .first { font-size: 1.3rem; margin-bottom: 20px; }
+    .deeds li { grid-template-columns: 1fr; gap: 2px; }
+    .deeds .when { padding-top: 0; }
+    .writings li { grid-template-columns: 44px 1fr; }
+  }
+</style>
+</head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <img class="profile" style="max-width:70%;" src="assets/images/profile.png" alt="" />
-                <h1 class="name">Fréjus Laleye</h1>
-                <h3 class="tagline">PhD in Computer Science</h3>
-            </div><!--//profile-container-->
-            
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <!-- <li class="email"><i class="fas fa-envelope"></i><a href="mailto: zhaiyuming9@gmail.com">zhaiyuming9@gmail.com</a></li> -->
-                    <li class="email"><i class="fas fa-envelope"></i><a href="mailto: frejus.laleye@gmail.com">frejus.laleye@gmail.com</a></li>    
-                    <li class="linkedin"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/fr%C3%A9jus-laleye-9b767b94/" target="_blank">linkedin</a></li>
-                    <li class="github"><i class="fab fa-github"></i><a href="https://github.com/laleye" target="_blank">github</a></li>
-                    <li class="researchGate"><i class="fab fa-researchgate"></i><a href="https://www.researchgate.net/profile/Frejus_A_A_Laleye" target="_blank">ResearchGate</a></li>
-                </ul>
-            </div><!--//contact-container-->
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Education</h2>
-                <div class="item">
-                    <h4 class="degree">PhD in Computer Science</h4>
-                    <h5 class="meta">Université du Litoral Côte d'Opale, LISIC, France & Université d'Abomey-Calavi, IMSP, Bénin</h5>
-                    <div class="time">2013 - 2016</div>
-                </div>
-                <div class="item">
-                    <h4 class="degree">MA in Computer Science and Applied Sciences</h4>
-                    <h5 class="meta">Institut de Mathématique et de Sciences Physiques (IMSP), Bénin</h5>
-                    <div class="time">2009 - 2012</div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">BA in Electronics</h4>
-                    <h5 class="meta">Université d'Abomey-Calavi, Bénin</h5>
-                    <div class="time">2006 - 2009</div>
-                </div><!--//item-->
-            </div><!--//education-container-->
-            
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Languages</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Chinese mandarin <span class="lang-desc">(Native)</span></li>
-                    <li>French <span class="lang-desc">(Professional, DALF C1)</span></li>
-                    <li>English <span class="lang-desc">(Professional)</span></li>
-                </ul>
-            </div><!--//interests-->
-            
-        </div><!--//sidebar-wrapper-->
-        
-        <div class="main-wrapper">
-            <!-- https://scholar.google.com/citations?user=PNWV-N4AAAAJ&hl=en   google scholar --> 
-            <section class="section summary-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>About me</h2>
-                <div class="summary">
-                    <p>
-                        I am currently a researcher at CEA List since 2017, carrying out research on Natural Languange Processing. I completed my PhD on Automatic Speech Recognition
-                         in the <a href="https://www-lisic.univ-littoral.fr/" target="_blank">Laboratoire d'Informatique Signal et Image (LISIC)</a> of <a href="https://www.univ-littoral.fr/" target="_blank">
-                        Université du Littoral Côte d'Opale</a> in 2016. My research interests include human machine dialog systems, neural machine translation,
-                        automatic speech recognition and translation for low-resourced languages, natural language understanding and machine learning. 
-           
-                    </p>
-                </div><!--//summary-->
-            </section><!--//section-->
-            
-            <section class="section experiences-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-briefcase"></i></span>RESEARCH EXPERIENCE</h2>
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">LABFORSIMS 2, ANR Project</h3>
-                            <div class="time">2017 - 2020</div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <p>
-                        <a href="http://www.medecine.universite-paris-saclay.fr/fr/labforsims/labforsims-2.html" target="_blank">LABFORSIMS2</a>: Resources for Endangered Languages through Translated Texts<br/>
-                        Collaborative interdisciplinary project between Medical School of Université de Paris-Sud, Gustave Roussy Institue, HRV and CEA List.<br/> 
-                       
-                        </p>
-                    </div>
-                </div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="g-wave" viewBox="0 0 24 24"><path d="M3 14l3-5 3 5 3-5 3 5 3-5 3 5"/></symbol>
+  <symbol id="g-eye" viewBox="0 0 24 24"><path d="M3 12q9-8 18 0q-9 8-18 0z"/><circle cx="12" cy="12" r="2.2" class="fill"/></symbol>
+  <symbol id="g-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5"/><circle cx="12" cy="12" r="1.8" class="fill"/></symbol>
+  <symbol id="g-pyr" viewBox="0 0 24 24"><path d="M12 4l9 15H3z"/><path d="M3 22h18"/></symbol>
+  <symbol id="g-pillar" viewBox="0 0 24 24"><path d="M4 5h16M7 5v15M12 5v15M17 5v15"/></symbol>
+  <symbol id="g-crook" viewBox="0 0 24 24"><path d="M9 21V9a4 4 0 0 1 8 0v2"/></symbol>
+  <symbol id="g-mouth" viewBox="0 0 24 24"><path d="M3 15q9-7 18 0q-9 7-18 0z"/><path d="M7 7h10M9.5 3.5h5"/></symbol>
+  <symbol id="g-scroll" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M8.5 8h7M8.5 12h7M8.5 16h4"/></symbol>
+  <symbol id="g-boat" viewBox="0 0 24 24"><path d="M2 14q10 9 20 0"/><path d="M12 17V5M12 6l6 5h-6"/></symbol>
+  <symbol id="g-house" viewBox="0 0 24 24"><path d="M9 20H4V5h16v15h-5"/></symbol>
+  <symbol id="g-star" viewBox="0 0 24 24"><path d="M12 3v18M3.5 9.5l17 5M3.5 14.5l17-5"/></symbol>
+  <symbol id="g-sprout" viewBox="0 0 24 24"><path d="M12 21V10"/><path d="M12 12q-7 0-7-7q7 0 7 7z"/><path d="M12 10q0-6 7-6q0 6-7 6z"/></symbol>
+</svg>
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Teaching and Research Assistant</h3>
-                            <div class="time">2019 - Present</div>
-                        </div>
-                        <div class="company">University of Paris-Saclay, CNRS, LIMSI, France</div>
-                    </div>
-                    <div class="details">
-                        <p>The courses that I taught are listed below.</p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">PhD in Computer Science</h3>
-                            <div class="time">2016 - 2019</div>
-                        </div><!--//upper-row-->
-                        <div class="company">University of Paris-Saclay, CNRS, LIMSI, France</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>
-                        <a href="http://www.theses.fr/2019SACLS489" target="_blank">Recognition of sub-sentential translation techniques: from resources to validation (in French)</a> <br/>  
-                        <a href="https://tel.archives-ouvertes.fr/tel-02460548/document" target="_blank">[pdf]</a>
-                        <a href="https://yumingzhai.github.io/files/slides_phd_defense.pdf" target="_blank">[slide]</a>
-                        <a href="https://yumingzhai.github.io/citation/thesis2019.bib" target="_blank">[bibtex]</a> 
-                        <br/> 
-
-                        Supervised by <a href="https://perso.limsi.fr/anne/" target="_blank">Anne Vilnat</a> and <a href="https://perso.limsi.fr/gabrieli/index.html" target="_blank">Gabriel Illouz</a>  
-                        </p>  
-                    </div>
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Master internship</h3>
-                            <div class="time">2015 - 2016</div>
-                        </div><!--//upper-row-->
-                        <div class="company"><a href="https://www.xiko.fr/" target="_blank">XiKO</a></div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>
-                        develop linguistic resources, text mining <br/>
-                        prepare configuration file for crawling web pages <br/>
-                        compare and implement methods of feature selection for automatic document classification <br/>
-                        Supervised by <a href="https://www.linkedin.com/in/gaelpatin/" target="_blank">Gaël Patin</a> and <a href="http://damien.nouvels.net/" target="_blank">Damien Nouvel</a> 
-                        </p>  
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-            </section><!--//section-->
-            
-            <section class="section projects-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>PUBLICATIONS</h2>
-                <h3 class="section-title">CONFERENCE PROCEEDINGS</h3>
-                <!-- <div class="intro"> -->
-                    <!-- <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p> -->
-                <!-- </div>//intro -->
-                <div class="item">
-                    <a href="https://yumingzhai.github.io/files/TALN_2020.pdf" target="_blank">
-                        <span class="project-title">La réécriture monolingue ou bilingue facilite-t-elle la compréhension ?</span>
-                    </a> 
-                    <br/> 
-                    <span class="project-tagline"><b>Yuming Zhai</b>, Gabriel Illouz and Anne Vilnat (2020), In Proceedings of the 27th Conférence sur le Traitement Automatique des Langues Naturelles (TALN'20). Nancy, France. 
-                    <a href="https://yumingzhai.github.io/citation/taln2020.bib" target="_blank">[bibtex]</a>
-                    <a href="https://github.com/YumingZHAI/reecriture_comprehension" target="_blank">[material]</a></span>
-                </div>
-                <div class="item">
-                    <a href="https://www.aclweb.org/anthology/2020.lrec-1.496/" target="_blank">
-                        <span class="project-title">Building an English-Chinese Parallel Corpus Annotated with Sub-sentential Translation Techniques</span>
-                    </a> 
-                    <br/> 
-                    <span class="project-tagline"><b>Yuming Zhai</b>, Lufei Liu, Xinyi Zhong, Gabriel Illouz and Anne Vilnat (2020), In Proceedings of the 12th International Conference on Language Resources and Evaluation (LREC'20). Marseille, France. 
-                    <a href="https://github.com/YumingZHAI/human_vs_machine_translation" target="_blank">[code]</a></span>
-                    <a href="https://yumingzhai.github.io/citation/lrec2020.bib" target="_blank">[bibtex]</a> 
-                </div>
-                <div class="item">
-                    <a href="https://yumingzhai.github.io/files/TALN_2019.pdf" target="_blank">
-                        <span class="project-title">Classification automatique des procédés de traduction</span>
-                    </a> 
-                    <br/> 
-                    <span class="project-tagline"><b>Yuming Zhai</b>, Gabriel Illouz and Anne Vilnat (2019), In Proceedings of the 26th Conférence sur le Traitement Automatique des Langues Naturelles (TALN'19). Toulouse, France. <a href="https://yumingzhai.github.io/files/TALN_slides.pdf" target="_blank">[slide]</a><a href="https://github.com/YumingZHAI/ctp" target="_blank">[code]</a><a href="https://yumingzhai.github.io/citation/taln2019.bib" target="_blank">[bibtex]</a>
-                    </span>
-                </div>
-                <div class="item">
-                    <a href="https://yumingzhai.github.io/files/EIAH2019_acte.pdf" target="_blank">
-                        <span class="project-title">Conception d'un outil d'aide à la compréhension écrite pour les apprenants de français langue étrangère</span>
-                    </a> 
-                    <br/> 
-                    <span class="project-tagline"><b>Yuming Zhai</b>, Gabriel Illouz and Anne Vilnat (2019), In Proceedings of the 9th Conférence Environnements Informatiques pour l'Apprentissage Humain (EIAH'19). Paris, France. <a href="https://yumingzhai.github.io/files/EIAH_poster.pdf" target="_blank">[poster]</a><a href="https://yumingzhai.github.io/citation/eiah2019.bib" target="_blank">[bibtex]</a></span>
-                </div>
-                <div class="item">
-                    <a href="https://arxiv.org/abs/1904.12213" target="_blank"><span class="project-title">Towards Recognizing Phrase Translation Processes: Experiments on English-French</span></a> <br/> 
-                    <span class="project-tagline"><b>Yuming Zhai</b>, Pooyan Safari, Gabriel Illouz, Alexandre Allauzen and Anne Vilnat (2019), preprint version In Proceedings of the 20th International Conference on Computational Linguistics and Intelligent Text Processing (CICLING'19). La Rochelle, France. <a href="https://github.com/YumingZHAI/ctp" target="_blank">[code]</a><a href="https://yumingzhai.github.io/files/Cicling_poster.pdf" target="_blank">[poster]</a><a href="https://yumingzhai.github.io/citation/cicling2019.bib" target="_blank">[bibtex]</a></span>
-                </div>
-                <div class="item">
-                    <a href="https://www.aclweb.org/anthology/W18-3814" target="_blank"><span class="project-title">Construction of a Multilingual Corpus Annotated with Translation Relations</span></a> <br/> 
-                    <span class="project-tagline"><b>Yuming Zhai</b>, Aurélien Max and Anne Vilnat (2018), In Proceedings of the First Workshop on Linguistic Resources for Natural Language Processing@COLING (LR4NLP'18). Santa Fe, New Mexico, USA. <a href="https://yumingzhai.github.io/files/LR4NLP_slides.pdf" target="_blank">[slide]</a><a href="https://yumingzhai.github.io/citation/lr4nlp2018.bib" target="_blank">[bibtex]</a></span>
-                </div>
-                <div class="item">
-                    <a href="https://hal.archives-ouvertes.fr/hal-01803762/document" target="_blank"><span class="project-title">Construction d'un corpus multilingue annoté en relations de traduction</span></a> <br/> 
-                    <span class="project-tagline"><b>Yuming Zhai</b> (2018), In Proceedings of the 20th REncontres jeunes Chercheurs en Informatique pour le TAL (RECITAL'18). Rennes, France. <a href="https://yumingzhai.github.io/files/Recital_poster.pdf" target="_blank">[poster]</a><a href="https://yumingzhai.github.io/citation/recital2018.bib" target="_blank">[bibtex]</a></span>
-                </div>
-                <h3 class="section-title">MASTER THESIS</h3>
-                <div class="item">
-                    <a href="https://yumingzhai.github.io/files/memoire_master.pdf" target="_blank"><span class="project-title">Étude sur l'apport de la sélection des caractéristiques dans la classification multi-classe des textes</span></a><br/> 
-                    <span class="project-tagline"><b>Yuming Zhai</b> (2016), Master thesis defended at National Institute for Oriental Languages and Civilizations (INALCO) (18/20). <a href="https://yumingzhai.github.io/files/soutenance_M2_slides.pdf" target="_blank">[slide]</a><br/>
-                    Supervised by Gaël Patin and Damien Nouvel</span>
-                </div>
-            </section>
-
-            <section class="section projects-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>TALKS</h2>
-                <!-- <div class="intro">
-                    <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-                </div> -->
-                <span class="project-title">Construction of a Multilingual Corpus Annotated with Translation Relations</span><br/> 
-                <span class="project-tagline"><b>Yuming Zhai</b> (2018), In the workshop of <a href="http://www.clillac-arp.univ-paris-diderot.fr/_media/colloques/atelier_corli_30_nov_2018_vf.pdf" target="_blank">Cross-lingual Analysis and Multilingual Parallel and Comparable Corpus Annotation: Present and Future Tendency</a>. University of Paris Diderot, France. <a href="https://yumingzhai.github.io/files/atelier_CORLI_slides.pdf" target="_blank">[slide]</a></span>
-            </section>
-
-            <section class="section projects-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>RESOURCES</h2>
-                Last modification: 05/12/2019. Licence: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Attribution-NonCommercial-ShareAlike 4.0</a> <br/>
-                If you reuse the EN-ZH annotation guidelines, please use <a href="https://yumingzhai.github.io/citation/lrec2020.bib" target="_blank">this citation</a>. <br/>
-                If you reuse the EN-FR annotation guidelines, please use <a href="https://yumingzhai.github.io/citation/thesis2019.bib" target="_blank">this citation</a>. <br/>
-
-                <a href="https://yumingzhai.github.io/files/Annotation_guide_EN_FR.pdf" target="_blank"><span class="project-title">Annotation Guidelines of Translation Techniques for English-French</span></a><br/> 
-                <a href="https://yumingzhai.github.io/files/Annotation_guide_EN_ZH.pdf" target="_blank"><span class="project-title">Annotation Guidelines of Translation Techniques for English-Chinese</span></a><br/> 
-            </section>
-
-            <section class="section projects-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>TEACHING EXPERIENCE</h2>
-                <!-- <div class="intro">
-                    <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-                </div> -->
-                <div class="item">
-                    <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Programming and database administration (Oracle SQL)</h3>
-                                <div class="time">2017</div>
-                            </div><!--//upper-row-->
-                            <div class="company">IUT of Orsay, France, with Anne Vilnat</div>
-                        </div><!--//meta-->
-                        <div class="details">
-                            <p>bachelor 1st-year practical classes (21hrs)</p>    
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Operating systems and concurrent computing (C)</h3>
-                                <div class="time">2019</div>
-                            </div><!--//upper-row-->
-                            <div class="company">University of Paris-Saclay, France, with Thomas Lavergne</div>
-                        </div><!--//meta-->
-                        <div class="details">
-                            <p>bachelor 3rd-year practical classes (30hrs)</p>    
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Introduction to object-oriented programming (Java)</h3>
-                                <div class="time">2019</div>
-                            </div><!--//upper-row-->
-                            <div class="company">University of Paris-Saclay, France, with Alice Jacquot</div>
-                        </div><!--//meta-->
-                        <div class="details">
-                            <p>bachelor 2nd-year practical classes (24hrs)</p>    
-                    </div>
-                </div>
- 
-                <div class="item">
-                    <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Database management system (Oracle SQL)</h3>
-                                <div class="time">2020</div>
-                            </div><!--//upper-row-->
-                            <div class="company">University of Paris-Saclay, France, with Emmanuel Waller</div>
-                        </div><!--//meta-->
-                        <div class="details">
-                            <p>bachelor 3rd-year practical classes (16.5hrs)</p>    
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Advanced programming of interactive interfaces (JavaFX)</h3>
-                                <div class="time">2020</div>
-                            </div><!--//upper-row-->
-                            <div class="company">University of Paris-Saclay, France, with Ouriel Grynszpan</div>
-                        </div><!--//meta-->
-                        <div class="details">
-                            <p>bachelor 3rd-year practical classes (27hrs)</p>    
-                    </div>
-                </div>
-            </section>
-
-            <section class="section projects-section">
-                <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>ACADEMIC SERVICE</h2>
-                <span class="project-title"><b>Peer review experience</b></span><br/>
-                <span class="project-tagline">Conferences: ACL, EMNLP 2020</span>
-            </section>
-            
-        </div><!--//main-body-->
+<header class="opening">
+  <div class="wrap">
+    <div class="portrait"><img src="assets/images/profile.png" alt="Portrait of Fréjus A. A. Laleye"></div>
+    <div>
+      <h1>Fréjus A. A. Laleye</h1>
+      <p class="role">Researcher in Natural Language Processing · Chief Technology Officer</p>
+      <p class="praise">who gave a machine its first words of Fongbe, and leads those who build the next ones.</p>
     </div>
+    <div class="side">
+      <svg class="strip" viewBox="0 0 250 34" aria-hidden="true"><rect x="1" y="1" width="248" height="32" rx="16"/><path d="M22 20l5-6 5 6 5-6 5 6 5-6 5 6"/><path d="M70 17q11-9 22 0q-11 9-22 0z"/><circle cx="81" cy="17" r="2.6" class="fill"/><circle cx="121" cy="17" r="8"/><circle cx="121" cy="17" r="2" class="fill"/><path d="M150 25l9-16 9 16z"/><path d="M188 9v16M196 9v16M204 9v16"/><path d="M184 9h24"/><path d="M222 25q0-14 8-14"/></svg>
+      <ul class="links">
+        <li><a href="mailto:frejus.laleye@gmail.com">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=rbDnH6MAAAAJ">Scholar</a></li>
+        <li><a href="https://github.com/laleye">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/fr%C3%A9jus-laleye-9b767b94/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section class="exchange">
+  <h2 class="call"><svg class="glyph" viewBox="0 0 44 64" aria-hidden="true"><rect x="1.5" y="1.5" width="41" height="61" rx="20.5"/><path d="M10 32q12-11 24 0q-12 11-24 0z"/><circle cx="22" cy="32" r="3.2" class="fill"/></svg><span><small>The listener asks</small><em>What are you seeking?</em></span></h2>
+  <div class="response">
+    <p class="first">How to make machines understand languages that have little data, no settled spelling, and tones that change the meaning of a word.</p>
+    <div class="grid">
+      <div><svg class="mini" aria-hidden="true"><use href="#g-wave"/></svg><h3>Tonal speech recognition</h3><p>Self-supervised speech models adapted to a new language, and the explicit modelling of lexical tone alongside the sounds.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-pillar"/></svg><h3>Data as scientific infrastructure</h3><p>Speech corpora at national scale, annotation quality, writing and tone normalisation, shared benchmarks.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-mouth"/></svg><h3>Reliable voice interfaces</h3><p>What a recogniser gets wrong, and which errors are unacceptable when the user cannot read the transcript.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-boat"/></svg><h3>Speech translation</h3><p>From Fongbe speech to French text, with corpora and reference systems used in international evaluation campaigns.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-scroll"/></svg><h3>Machines that read science</h3><p>Question answering, relation extraction and claim verification over the research literature.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-eye"/></svg><h3>Evaluation of language models</h3><p>Reference sets and model-based judgement for systems that retrieve, reason and write.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" role="presentation"><svg viewBox="0 0 96 24" aria-hidden="true"><use href="#g-wave" x="0" y="0" width="24" height="24"/><use href="#g-eye" x="36" y="0" width="24" height="24"/><use href="#g-sun" x="72" y="0" width="24" height="24"/></svg></div>
+
+<section class="exchange">
+  <h2 class="call"><svg class="glyph" viewBox="0 0 44 64" aria-hidden="true"><rect x="1.5" y="1.5" width="41" height="61" rx="20.5"/><path d="M22 20 34 42H10z"/><path d="M10 47h24"/></svg><span><small>The listener asks</small><em>What have your hands made?</em></span></h2>
+  <div class="response">
+    <ol class="deeds">
+      <li><span class="when">Today</span><div><b>I lead the science of a national speech programme.</b>Scientific lead for the collection and annotation of Beninese speech, tones included, and for the recognition models, benchmarks and voice services built on it. Associate researcher at the Université de Parakou, where I also teach and contribute to doctoral supervision.</div></li>
+      <li><span class="when">Since 2023</span><div><b>I direct the technology of an AI company.</b>Chief Technology Officer of Opscidia, in Paris. I set the technology vision and the research roadmap with the chief executive, decide where investment goes, recruit and lead a team of researchers and engineers, and answer to industrial clients for what is delivered.</div></li>
+      <li><span class="when">Since 2023</span><div><b>I rebuilt a platform while it was in use.</b>I directed its move from a single block to independent services, so that it could scale, hold under load and evolve without interruption.</div></li>
+      <li><span class="when">2020 – 2023</span><div><b>I carried research into production.</b>As head of AI research and development, I led work on language models, information extraction, knowledge graphs and scientific fact-checking, and turned it into evidence-grounded question answering, agentic search and assisted report writing.</div></li>
+      <li><span class="when">2017 – 2020</span><div><b>I built machines that converse.</b>Research scientist at CEA List, on dialogue and language understanding, including a virtual patient that lets future doctors practise the consultation.</div></li>
+      <li><span class="when">2013 – 2016</span><div><b>I taught a machine to hear Fongbe.</b>Doctorate in computer engineering, automation and signal processing, between France and Benin. No system could transcribe continuous Fongbe speech; I collected the voices, modelled the sounds and the language, and built the first one.</div></li>
+    </ol>
+  </div>
+</section>
+
+<div class="divider" role="presentation"><svg viewBox="0 0 96 24" aria-hidden="true"><use href="#g-pyr" x="0" y="0" width="24" height="24"/><use href="#g-pillar" x="36" y="0" width="24" height="24"/><use href="#g-crook" x="72" y="0" width="24" height="24"/></svg></div>
+
+<section class="exchange">
+  <h2 class="call"><svg class="glyph" viewBox="0 0 44 64" aria-hidden="true"><rect x="1.5" y="1.5" width="41" height="61" rx="20.5"/><circle cx="22" cy="32" r="9"/><circle cx="22" cy="32" r="2.4" class="fill"/></svg><span><small>The listener asks</small><em>What drives you?</em></span></h2>
+  <div class="response">
+    <div class="grid">
+      <div><svg class="mini" aria-hidden="true"><use href="#g-star"/></svg><h3>Innovation rooted in African realities</h3><p>Scientific and technological innovation that starts from the problem as it is lived on the continent: its languages, its constraints, its uses.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-boat"/></svg><h3>Transfer of skills, knowledge and technology</h3><p>Carrying what the laboratory knows to those who will use it, and training the engineers and researchers who will take it further.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-pyr"/></svg><h3>Digital transformation</h3><p>Helping institutions and companies rethink how they work with data and artificial intelligence, from strategy to the systems in service.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-sprout"/></svg><h3>Local and sovereign capacity</h3><p>National data, local talent and lasting partnerships between universities, institutions and industry.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" role="presentation"><svg viewBox="0 0 96 24" aria-hidden="true"><use href="#g-boat" x="0" y="0" width="24" height="24"/><use href="#g-star" x="36" y="0" width="24" height="24"/><use href="#g-sprout" x="72" y="0" width="24" height="24"/></svg></div>
+
+<section class="exchange">
+  <h2 class="call"><svg class="glyph" viewBox="0 0 44 64" aria-hidden="true"><rect x="1.5" y="1.5" width="41" height="61" rx="20.5"/><rect x="13" y="20" width="18" height="24" rx="1"/><path d="M17 27h10M17 32h10M17 37h6"/></svg><span><small>The listener asks</small><em>What have you left in writing?</em></span></h2>
+  <div class="response">
+    <ul class="writings">
+      <li><span class="w-year">2025</span><span><span class="w-title"><a href="https://www.isca-archive.org/interspeech_2025/kponou25_interspeech.html">Extending the Fongbe to French Speech Translation Corpus: resources, models and benchmark</a></span><span class="w-venue">Interspeech</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title"><a href="https://aclanthology.org/2025.iwslt-1.13/">FFSTC 2: Extending the Fongbe to French Speech Translation Corpus</a></span><span class="w-venue">IWSLT</span></span></li>
+      <li><span class="w-year">2024</span><span><span class="w-title"><a href="https://aclanthology.org/2024.lrec-main.638/">FFSTC: Fongbe to French Speech Translation Corpus</a></span><span class="w-venue">LREC-COLING</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title"><a href="https://arxiv.org/abs/2402.13897">Science Checker Reloaded: A Bidirectional Paradigm for Transparency and Logical Reasoning</a></span><span class="w-venue">arXiv</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title">Attention-based recurrent neural network for automatic behavior laying hen recognition</span><span class="w-venue">Multimedia Tools and Applications</span></span></li>
+      <li><span class="w-year">2023</span><span><span class="w-title">Leveraging Knowledge Graph Embeddings to Enhance Contextual Representations for Relation Extraction</span><span class="w-venue">ICDAR</span></span></li>
+      <li><span class="w-year">2022</span><span><span class="w-title"><a href="https://arxiv.org/abs/2204.12263">Science Checker: Extractive-Boolean Question Answering for Scientific Fact Checking</a></span><span class="w-venue">Workshop on Multimedia AI against Disinformation</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title"><a href="https://aclanthology.org/2022.smm4h-1.46/">OFU@SMM4H'22: Mining Advent Drug Events Using Pretrained Language Models</a></span><span class="w-venue">SMM4H</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title">Multi-label classification for biomedical literature: an overview of the BioCreative VII LitCovid Track</span><span class="w-venue">Database</span></span></li>
+      <li><span class="w-year">2021</span><span><span class="w-title"><a href="https://arxiv.org/abs/2111.05808">BagBERT: BERT-based bagging-stacking for multi-topic classification</a></span><span class="w-venue">arXiv</span></span></li>
+      <li><span class="w-year">2020</span><span><span class="w-title"><a href="https://arxiv.org/abs/1912.07421">Semantic Similarity to Improve Question Understanding in a Virtual Patient</a></span><span class="w-venue">ACM Symposium on Applied Computing</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title"><a href="https://aclanthology.org/2020.lrec-1.72/">A French Medical Conversations Corpus Annotated for a Virtual Patient Dialogue System</a></span><span class="w-venue">LREC</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title">Iagotchi : vers un agent conversationnel artistique</span><span class="w-venue">JEP-TALN-RECITAL</span></span></li>
+      <li><span class="w-year">2019</span><span><span class="w-title"><a href="https://aclanthology.org/2019.jeptalnrecital-court.17/">Hybridation d'un agent conversationnel avec des plongements lexicaux pour la formation au diagnostic médical</a></span><span class="w-venue">TALN</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title">Compiler-compiler of multi syntax programming languages for creating N-version software</span><span class="w-venue">Journal of Physics: Conference Series</span></span></li>
+      <li><span class="w-year">2018</span><span><span class="w-title">Toward an Automatic Fongbe Speech Recognition System: Hierarchical Mixtures of Algorithms for Phoneme Recognition</span><span class="w-venue">Springer, ICINCO selected papers</span></span></li>
+      <li><span class="w-year">2017</span><span><span class="w-title">Fuzzy-based algorithm for Fongbe continuous speech segmentation</span><span class="w-venue">Pattern Analysis and Applications</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title">Automatic boundary detection based on entropy measures for text-independent syllable segmentation</span><span class="w-venue">Multimedia Tools and Applications</span></span></li>
+      <li><span class="w-year">2016</span><span><span class="w-title"><a href="https://annals-csis.org/Volume_8/pliks/153.pdf">First Automatic Fongbe Continuous Speech Recognition System: Development of Acoustic Models and Language Models</a></span><span class="w-venue">FedCSIS</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title"><a href="https://doi.org/10.5220/0006004101020109">Automatic Fongbe Phoneme Recognition From Spoken Speech Signal</a></span><span class="w-venue">ICINCO</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title"><a href="https://link.springer.com/chapter/10.1007/978-3-319-31898-1_4">Speech Phoneme Classification by Intelligent Decision-Level Fusion</a></span><span class="w-venue">Springer, ICINCO selected papers</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title">Contributions à l'étude et à la reconnaissance automatique de la parole en Fongbe</span><span class="w-venue">Doctoral thesis</span></span></li>
+      <li><span class="w-year">2015</span><span><span class="w-title">Adaptive Decision-level Fusion for Fongbe Phoneme Classification using Fuzzy Logic and Deep Belief Networks</span><span class="w-venue">ICINCO</span></span></li>
+      <li><span class="w-year"></span><span><span class="w-title">An Algorithm Based on Fuzzy Logic for Text-Independent Fongbe Speech Segmentation</span><span class="w-venue">SITIS</span></span></li>
+      <li><span class="w-year">2014</span><span><span class="w-title">Weighted Combination of Naive Bayes and LVQ Classifier for Fongbe Phoneme Classification</span><span class="w-venue">SITIS</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="divider" role="presentation"><svg viewBox="0 0 96 24" aria-hidden="true"><use href="#g-scroll" x="0" y="0" width="24" height="24"/><use href="#g-mouth" x="36" y="0" width="24" height="24"/><use href="#g-house" x="72" y="0" width="24" height="24"/></svg></div>
+
+<section class="exchange">
+  <h2 class="call"><svg class="glyph" viewBox="0 0 44 64" aria-hidden="true"><rect x="1.5" y="1.5" width="41" height="61" rx="20.5"/><path d="M11 36q11-9 22 0q-11 9-22 0z"/><path d="M15 26h14M18 21h8"/></svg><span><small>The listener asks</small><em>What do people come to you for?</em></span></h2>
+  <div class="response">
+    <div class="grid">
+      <div><svg class="mini" aria-hidden="true"><use href="#g-eye"/></svg><h3>Scientific direction</h3><p>Framing a research programme, its protocols, its evaluation and its publications.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-wave"/></svg><h3>Language technology for Africa</h3><p>Speech recognition and translation for tonal languages, from the first recording to the deployed service.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-star"/></svg><h3>Technology strategy</h3><p>Vision, research and development roadmaps, investment and budget choices, enterprise and institutional partnerships.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-crook"/></svg><h3>Leading technical teams</h3><p>Recruitment, organisation, engineering standards, guidance of engineers and young researchers.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-boat"/></svg><h3>From research to product</h3><p>Language models, retrieval, agents and their evaluation, taken from prototype to production.</p></div>
+      <div><svg class="mini" aria-hidden="true"><use href="#g-house"/></svg><h3>Platforms that hold</h3><p>Distributed architectures, cloud infrastructure, reliability, data sovereignty, cost control.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="closing">
+  <div class="wrap">
+    <p>You who pass by this page with work worth doing, speak to me.</p>
+    <ul>
+      <li><a href="mailto:frejus.laleye@gmail.com">Write to me</a></li>
+      <li><a href="https://scholar.google.com/citations?user=rbDnH6MAAAAJ">Google Scholar</a></li>
+      <li><a href="https://github.com/laleye">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/fr%C3%A9jus-laleye-9b767b94/">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
